@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Miniclubseite Member</title>
+		<link rel="stylesheet" href="../css/style.css" />
+    </head>
+	<body>
+		<div id="wrapper"><!--dies wird der page wrapper -->
+			<header>
+				<img class="fl_left" src="../assets/mini-logo.png" alt="logo mini" /><!-- hier wird ein headerbild und das Minilogo eingesetzt-->
+				<h1 class="welcome">Willkommen bei der Miniklubseite von Olivia Husin</h1>
+			</header>
+			<nav>
+				<ul>
+					<li><a href="../index.html">Home</a></li>
+					<li><a href="../index.html#may">Countryman</a></li>
+					<li><a class="current" href="member.html">Mitglieder</a></li>
+					<li><a href="preise.html">Preise</a></li>
+					<li><a href="http://mini.ch" target="newtab">Mini</a></li>
+				</ul>
+			</nav>
+		    <div class="cllfix"></div>
+			<section>
+				<h1>Willkommen auf der Memberseite</h1>
+				<h2>Anmeldung zum Sommerfest</h2>
+				<form action="#" method="post" name="membform">
+	            	<fieldset><!--Informationen über den User-->
+		            	<legend>Koordinaten:</legend>
+		                <p><label for="vorname">Vorname(*):</label><input type="text" name="vorname" required  autofocus></p>
+		                <p><label>Nachname (*):</label><input type="text" name="nachname" required  ></p>
+		                <p><label>Adresse:</label><input type="text" name="adresse"></p>
+		                <p><label>e-mail (*):</label><input name="email" type="email" ></p>
+		                <p>Die mit (*) gekennzeichneten Felder sind Pflichtfelder.</p>
+	            	</fieldset>
+		            <fieldset><!--Anmeldung zum Sommerfest-->
+		            	<legend>Anmeldung zum Sommerfest:</legend>
+		                <p>Ich bin dabei: (verbindlich) </p>
+		                <p><input type="radio" name="anmeldung" value="ja"> Ja
+		                    <input type="radio" name="anmeldung" value="nein"> Nein 
+		                </p> <!
+		                <label>Anzahl Personen:</label>
+		                <p><input type="text" name="anzahl" ></p>
+		                <p><label>Mitgliedschaft?</label> <!--select option-->
+		              <select class="textfeld" name="info" >
+		                <option value="aktiv-mitglied">Aktiv-Mitglied</option>
+		                <option value="passiv-mitglied">Passiv-Mitglied</option>
+		              </select></p>
+		                <label>Allergien:</label> <!--checkbox-->
+		                <p><input type="checkbox" name="allergies[]" value="gluten"> Gluten
+		                    <input type="checkbox" name="allergies[]" value="lactose"> Laktoseintoleranz
+		                <input type="checkbox" name="allergies[]" value="andere"> andere</p>
+		                <p><label>Welche?</label><input type="text" name="allergies"></p>
+		            </fieldset>
+	             	<fieldset>
+	                	<legend>Mitteilung:</legend>
+	                 	<p><label>Bemerkung:</label>
+	                    <textarea name="notes" rows="4" cols="20"></textarea></p>
+	             	</fieldset>
+	            	<p><input class="button1" type="submit" value="Senden"> <!--reset-->
+	                <input class="button2" type="reset" value="Löschen"></p> <!--input-->
+            	</form>
+		    </section>
+		    <div class="cllfix"></div> 
+		    <footer>
+		        <p>&copy; Olivia Husin</p>
+		    </footer>
+	    </div>
+	</body>
+</html>

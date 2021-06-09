@@ -1,0 +1,169 @@
+body {/*Schriftart von allen*/
+	font-family: verdana, sans-serif;
+	color: #4c4c4c; 
+	font-size: 1em;
+
+}
+h1 { /*Nur h1*/
+	font-family: "century gothic";
+	font-size: 2em;
+	color: #cc3333;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+h2 { 
+	font-family: "century gothic";
+	font-size: 1.6em;
+	color: #cc3333;
+}
+#wrapper { /*alles unter body allgemeinen Size*/
+	width: 80%;
+	margin: 0 auto;
+	background: white;
+}
+.cllfix {/*zur Aufhebung des floats */
+	clear: both;
+	height: 30px;
+}
+header {/*header styling */
+	background-image: url("../assets/background1.jpg");
+	background-size: 100%; /*Hintergrund Grösse*/
+	background-position: left; 
+	background-repeat: no-repeat;
+	height: 400px;
+}
+.welcome {
+	float: right;
+	width: 85%;
+	margin-top: 2%;
+	color: #4c4c4c;
+	text-shadow: 1px 1px #4c4c4c;
+}
+.fl_left { 
+	float: left; /*minilogo left*/
+	width: 10%;
+	padding-left: 10px;
+	margin-top: 15px;
+}
+nav { /*alles vom Nav*/
+	position: sticky;
+	top: 0; /*Es klebt oben*/
+	background: rgba(255,255,255,0.9);/*Transparent*/
+	height: 40px; /*Grösse vom Nav balke*/
+}
+nav ul {
+	list-style: none;
+	text-align: center; /*alle liste*/
+}
+nav ul li {
+	display: inline-block; /*Zeigt Blocks an*/
+	padding: 5px 10px 5px 0;
+	margin-right: 10px;
+}
+nav ul li a {
+	text-decoration: none; /*or underline*/
+	color: #4c4c4c;
+	font-weight: bold;
+	text-transform: uppercase; /*or lowercase*/
+	font-size: 0.8em;
+}
+nav ul li a:hover {
+	border-bottom: 2px solid #4c4c4c;
+}
+nav ul li a.current { /*just one class*/
+	border-bottom: 2px solid #4c4c4c;
+}
+.anchor { /*Class may we intro..*/
+	visibility: hidden;
+	height: 40px;
+	margin-top: -40px;
+}
+.box_wrapp {/* box wrapp aside*/
+	width: 31%;
+	float: left; 
+	margin: 10px 10px 10px 0;
+	background-color: rgba(0,0,0,0.1);
+	border-radius: 5px;
+	padding: 5px;
+	font-size: 0.9em;
+}.news { /*Überschrift*/
+	color: #4c4c4c;
+	font-size: 1.3em;
+	border-bottom: 1px solid #4c4c4c;
+	margin-top: 20px;
+}.box_wrapp h2 {/*Überschrift*/
+	color: #4c4c4c;
+	font-size: 1.2em;
+}article {
+	overflow: hidden;
+	border-radius: 5px;
+}.base img { /*Picture*/
+	float: left;
+	width: 45%;
+	margin-right: 5px;
+}.base h2 { /*Überschrift vom base*/
+	border-bottom: 1px solid #cc3333;
+	margin-bottom: 1px;
+	font-size: 1.2em;
+}.base li {
+	margin-left: 15px;
+}.fl_right {
+	float: right;
+	width: 50%;
+}.one {
+	background: rgba(0,0,0,0.1);
+}
+/* table styling */
+caption { /*Countryman Preise in der Übersicht*/
+	color: #cc3333;
+	font-weight: bold;
+	margin-bottom: 20px;
+	text-transform: uppercase;
+}
+table { /* Ganzen Box*/
+	margin: 0 auto;
+	width: 50%;
+}
+table, td, th {
+	border: 1px dotted #4c4c4c; /* oder solid*/
+	border-collapse: collapse; /* important*/
+	padding: 10px;
+}
+thead {
+	background: rgba(0,0,0,0.1);
+}
+tfoot { /*table
+	font-weight: bold;
+	text-align: center;
+	background: rgba(0,0,0,0.1);
+}
+/*form styling */
+form {
+	margin: 20px auto;
+	width: 60%;
+}
+fieldset {
+	border: 1px dotted #4c4c4c;
+	padding: 10px;
+	margin-bottom: 20px;
+}
+legend {
+	color: #cc3333;
+	font-weight: bold;
+}
+label {
+	width: 10em;
+	float: left;
+}
+form p {
+	margin-bottom: 3px;
+}
+form input.button1 {
+	width: 50%;
+	float:left;
+	}
+form input.button2 {
+	width: 50%;
+	float: left;
+}
